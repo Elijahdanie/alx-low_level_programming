@@ -35,6 +35,6 @@ counter = 0;
 }
 putchar(asciivalue);
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }

@@ -11,6 +11,6 @@ for (int i = 0; i < 11; i++)
 {
 printf("%d", i);
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
