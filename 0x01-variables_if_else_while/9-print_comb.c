@@ -26,7 +26,7 @@ case 2:
 asciivalue = 32;
 break;
 default:
-break;  
+break; 
 }
 counter++;
 if (counter > 2)

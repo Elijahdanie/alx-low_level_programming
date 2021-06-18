@@ -1,11 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
-/**
-*more headers goes there 
-*/
+
 
 /**
-* main- This is the entry point
+* main - This is the entry point
 *
 *  Description: Indicates if random number is negetive or positive
 *
