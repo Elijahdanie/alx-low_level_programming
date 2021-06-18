@@ -7,9 +7,13 @@
  */
 int main(void)
 {
-int j, iteration = 28, counter = 0, numbervariants = 48, asciivalue = 0;
+int j, iteration, counter, numbervariants, asciivalue = 0;
+iteration = 28;
+counter = 0;
+numbervariants = 48;
 for (j = 0; j < 28; j++)
 {
+asciivalue = 0;
 switch (counter)
 {
 case 0:
