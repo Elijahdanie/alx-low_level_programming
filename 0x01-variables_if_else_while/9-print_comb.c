@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-int j, iteration, counter, numbervariants, asciivalue = 0;
-iteration = 28;
+int j, counter, numbervariants, asciivalue = 0;
+
 counter = 0;
 numbervariants = 48;
 for (j = 0; j < 28; j++)

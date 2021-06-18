@@ -13,7 +13,7 @@ for (i = 97; i < 123; i++)
 {
 putchar(i);
 }
-for (k = 65; k < 90; k++)
+for (k = 65; k < 91; k++)
 {
 putchar(k);
 }
