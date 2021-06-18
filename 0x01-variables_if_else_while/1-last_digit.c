@@ -12,10 +12,9 @@
 
 int main(void)
 {
-int n;
+int n, lastnumber ;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-int lastnumber = 0;
 lastnumber = n % 10;
 if (lastnumber < 0)
 {
