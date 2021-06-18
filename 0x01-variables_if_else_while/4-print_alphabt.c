@@ -7,14 +7,14 @@
  */
 int main(void)
 {
- for(int i = 97; i <123;i++)
- {
-     char a = (char)i;
-     if(a != 'q' && a != 's')
-        {
-            putchar(a);
-        }
- }
- putchar("\n");
- return 0;
+for(int i = 97; i <123;i++)
+{
+char a = (char)i;
+if (a != 'q' && a != 's')
+{
+putchar(a);
+}
+}
+putchar("\n");
+return 0;
 }
