@@ -8,14 +8,16 @@
 
 int main(void)
 {
-for (int i = 97; i < 123; i++)
+int i = 0;
+int k - 0;
+for (i = 97; i < 123; i++)
 {
 putchar(i);
 }
-for (int i = 65; i < 90; i++)
+for (k = 65; k < 90; k++)
 {
-putchar(i);
+putchar(k);
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
