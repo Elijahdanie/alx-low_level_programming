@@ -2,17 +2,17 @@
 
 /**
  * main - Entry point
- * 
+ *
  * Return: its 0 and always success
  */
 
 int main(void)
 {
-for (int i = 97; i <123; i++)
+for (int i = 97; i < 123; i++)
 {
 putchar(i);
 }
-for(int i = 65; i<90; i++)
+for (int i = 65; i< 90; i++)
 {
 putchar(i);
 }
