@@ -16,17 +16,17 @@ int asciivalue = 0;
 switch (counter)
 {
 case 0:
-    asciivalue = numbervariants;
-    numbervariants++;
-    break;
+asciivalue = numbervariants;
+numbervariants++;
+break;
 case 1:
-    asciivalue = 44;
-    break;
+asciivalue = 44;
+break;
 case 2:
-    asciivalue = 32;
-    break;
+asciivalue = 32;
+break;
 default:
-    break;  
+break;  
 }
 counter++;
 if (counter > 2)
