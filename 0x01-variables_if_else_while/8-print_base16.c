@@ -7,13 +7,14 @@
  */
 int main(void)
 {
-for (int i = 48; i < 58; i++)
+int i, k =0;
+for (i = 48; i < 58; i++)
 {
 putchar(i);
 }
-for (int i = 97; i < 103; i++)
+for (k = 97; k < 103; k++)
 {
-putchar(i);
+putchar(k);
 }
 putchar('\n');
 return (0);
