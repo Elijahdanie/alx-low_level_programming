@@ -19,6 +19,7 @@ if (i != k)
 putchar(i + '0');
 putchar(k + '0');
 putchar(',');
+putchar(32);
 }
 }
 j++;
