@@ -24,8 +24,8 @@ if (i == 8 && k == 9)
 else
 {
 putchar(',');
-}
 putchar(32);
+}
 }
 }
 j++;
