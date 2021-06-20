@@ -30,5 +30,6 @@ putchar(32);
 }
 j++;
 }
+putchar('\n');
 return (0);
 }
