@@ -18,8 +18,14 @@ if (i != k)
 {
 putchar(i + '0');
 putchar(k + '0');
+if (i == 8 && k == 9)
+{
+}
+else
+{
 putchar(',');
 putchar(32);
+}
 }
 }
 j++;
