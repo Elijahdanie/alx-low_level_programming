@@ -22,7 +22,8 @@ putchar(i + '0');
 putchar(k + '0');
 putchar(l + '0');                               
 if (i == 7 && k == 8 && l != 9)                            
-continue;
+{
+}
 else                                    
 {                     
 putchar(','); 
