@@ -2,6 +2,7 @@
 /**
  * print_sign - this functions prints the sign of a number
  * 
+ * n: This is the int value to be checked
  */
  
  int print_sign(int n)
