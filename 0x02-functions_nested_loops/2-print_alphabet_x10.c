@@ -1,14 +1,12 @@
-#include<Holberton.h>
+#include<holberton.h>
 /**
  * main-Entry level for program
  *
  * Returm: Always success 0
  */
 
-
 int main(void)
 {
-	print_alphabet_x10();
 }
 
 void print_alphabet_x10(void)
