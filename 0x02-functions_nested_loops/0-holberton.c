@@ -1,6 +1,9 @@
 #include "holberton.h"
 
 /**
+*_putchar- this is a function declaration of a file in holberton.h
+* char : this is the variable passed in
+*
 *main - Entry point for the program
 *
 *Return: Always Success 0
