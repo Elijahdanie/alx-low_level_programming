@@ -1,13 +1,9 @@
 #include<holberton.h>
 /**
- * main-Entry level for program
+ * print_alphabet_x10 - This prints all lower case alphabet 10 times
  *
  * Returm: Always success 0
  */
-
-int main(void)
-{
-}
 
 void print_alphabet_x10(void)
 {

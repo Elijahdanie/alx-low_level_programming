@@ -1,16 +1,11 @@
 #include "holberton.h"
 /**
- * main- Entry point for this program
+ * print_alphabet - This prints alphabet in lowercase
  *
  * Return: This returns 0 maeaning Success
 */
 
-int main(void)
-{
-	return (0);
-}
-
-void print_alphabet_x10(void)
+void print_alphabet(void)
 {
 int i = 0;
 for (i = 97; i < 123; i++)
