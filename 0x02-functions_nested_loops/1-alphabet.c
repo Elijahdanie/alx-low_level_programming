@@ -4,11 +4,9 @@
  *
  * Return: This returns 0 maeaning Success
 */
-void print_alphabet_x10(void);
 
 int main(void)
 {
-	print_alphabet();
 	return (0);
 }
 
