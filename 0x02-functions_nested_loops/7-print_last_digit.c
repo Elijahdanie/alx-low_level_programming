@@ -17,6 +17,6 @@ int c = 0;
 	}
 	c = c % 10;
 	_putchar(c + '0');
-	return (val);
+	return (c);
 }
 
