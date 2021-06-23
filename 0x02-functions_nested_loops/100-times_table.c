@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
  * print_times_table - this function prints the table of the int passed in
+ * @q: this is the variable of the multiplication table
  */
 
 void print_times_table(int q)
@@ -26,7 +27,7 @@ _putchar(' ');
 if (n > 9)
 {
 _putchar(n > 99 ? n / 100 + '0' : ' ');
-_putchar(n > 99 ? (n - ((n / 100) * 100))/10 + '0' : (n / 10) + '0');
+_putchar(n > 99 ? (n - ((n / 100) * 100)) / 10 + '0' : (n / 10) + '0');
 _putchar(n > 99 ? (n - ((n / 100) * 100)) % 10 + '0' : (n % 10) + '0');
 }
 else
