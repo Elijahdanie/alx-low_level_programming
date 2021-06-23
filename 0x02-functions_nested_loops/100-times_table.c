@@ -20,7 +20,6 @@ void print_times_table(int q)
 			if (k != 0)
 			{
 				_putchar(' ');
-				_putchar(' ');
 			}
 			if (n > 9)
 			{
@@ -32,6 +31,7 @@ void print_times_table(int q)
                     _putchar(tmpval % 10 + '0');
                 }else
 				{
+				_putchar(' ');
 				_putchar((n / 10) + '0');
 				_putchar((n % 10) + '0');
 				}
@@ -42,6 +42,7 @@ void print_times_table(int q)
 			}
 			else
 			{
+				_putchar(' ');
 				_putchar(' ');
 				_putchar(n + '0');
 				if (k != q)
