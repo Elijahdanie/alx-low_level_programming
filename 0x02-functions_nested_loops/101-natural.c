@@ -19,4 +19,5 @@ int main(void)
         }
     }
     printf("%d\n", totalval);
+    return (0);
 }
