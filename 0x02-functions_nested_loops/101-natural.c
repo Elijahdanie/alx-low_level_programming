@@ -11,8 +11,11 @@ int main(void)
     
     for (i = 0; i < 1024; i++)
     {
-        totalval += i % 3 == 0 ? 1 : 0;
-        totalval += i % 5 == 0 ? 1 : 0;
+        if(i != 1024)
+        {
+            totalval += i % 3 == 0 ? 1 : 0;
+            totalval += i % 5 == 0 ? 1 : 0;
+        }
     }
     printf("%d\n", totalval);
     return (0);
