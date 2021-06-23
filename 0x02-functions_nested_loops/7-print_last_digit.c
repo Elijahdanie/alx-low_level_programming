@@ -10,10 +10,9 @@
 
 int print_last_digit(int val)
 {
-	int c = 0;
-	
-	c = c % 10;
-	if (val < 0)
+	int c = val % 10;
+
+	if (c < 0)
 	{
 		c = -1 * val;
 	}
