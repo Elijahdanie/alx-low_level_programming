@@ -15,4 +15,5 @@ int main(void)
         totalval += i % 5 == 0 ? 1 : 0;
     }
     printf("%d\n", totalval);
+    return (0);
 }
