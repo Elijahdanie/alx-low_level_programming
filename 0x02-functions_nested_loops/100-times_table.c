@@ -6,13 +6,18 @@
 
 void print_times_table(int q)
 {
+	if(q != 100)
+	{
 	int i = 0, k = 0;
 	int tmpval = 0;
     int m = q + 1;
 	for (i = 0; i < m; i++)
 	{
 		_putchar('0');
-		_putchar(44);
+		if(q > 0)
+		{
+			_putchar(44);
+		}
 		for (k = 1; k < m; k++)
 		{
 			int n = i * k;
@@ -52,5 +57,6 @@ void print_times_table(int q)
 			}
 		}
 		_putchar('\n');
+	}
 	}
 }
