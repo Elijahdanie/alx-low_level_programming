@@ -13,7 +13,10 @@ void times_table(void)
 		{
 			int n = i * k;
 
-			_putchar(' ');
+			if (k != 0)
+			{
+				_putchar(' ');
+			}
 			if (n > 9)
 			{
 				int first = n / 10;
