@@ -28,11 +28,11 @@ void times_table(void)
 			}
 			else
 			{
+				_putchar(' ');
 				_putchar(n + '0');
 				if (k != 9)
 				{
 					_putchar(44);
-					_putchar(32);
 					_putchar(32);
 				}
 			}
@@ -40,4 +40,4 @@ void times_table(void)
 		_putchar('\n');
 	}
 }
-
+i
