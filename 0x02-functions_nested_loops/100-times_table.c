@@ -26,12 +26,18 @@ void print_times_table(int q)
 				int second = n % 10;
                 if(n > 99)
                 {
-                    int first = n / 10;
-				    int second = n % 10;
-                }
-
+                    int first = n/100;
+					int tmpval = n - (first * 100);
+					second = tmpval/10;
+                    int third = tmpval % 10;
+                    _putchar(first + '0');
+                    _putchar(second + '0');
+                    _putchar(third + '0');
+                }else
+				{
 				_putchar(first + '0');
 				_putchar(second + '0');
+				}
 				if (k != q)
 				{
 					_putchar(44);
@@ -50,4 +56,3 @@ void print_times_table(int q)
 		_putchar('\n');
 	}
 }
-
