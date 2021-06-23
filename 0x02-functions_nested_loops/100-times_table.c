@@ -6,7 +6,7 @@
 
 void print_times_table(int q)
 {
-	if(q != 100)
+	if (q != 100)
 	{
 	int i = 0, k = 0;
 	int tmpval = 0;
@@ -14,7 +14,7 @@ void print_times_table(int q)
 	for (i = 0; i < m; i++)
 	{
 		_putchar('0');
-		if(q > 0)
+		if (q > 0)
 		{
 			_putchar(44);
 		}
@@ -28,13 +28,14 @@ void print_times_table(int q)
 			}
 			if (n > 9)
 			{
-                if(n > 99)
+                if (n > 99)
                 {
 					tmpval = n - ((n/100) * 100);
                     _putchar(n/100 + '0');
                     _putchar(tmpval/10 + '0');
                     _putchar(tmpval % 10 + '0');
-                }else
+                }
+				else
 				{
 				_putchar(' ');
 				_putchar((n / 10) + '0');
