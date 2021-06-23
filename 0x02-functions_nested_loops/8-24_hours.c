@@ -8,18 +8,19 @@
 void jack_bauer(void)
 {
 	int i = 0, k = 0, h = 0;
+
 	for (i = 0; i < 1440; i++)
 	{
 	if (h < 10)
 	{
-	       	_putchar(0 + '0');
+		_putchar(0 + '0');
 		_putchar(h + '0');
 	}
 	else
 	{
-		int firstdigit, secondigit;
-		firstdigit = h / 10;
-		secondigit = h % 10;
+		int firstdigit = h / 10;
+		int secondigit = h % 10;
+
 		_putchar(firstdigit + '0');
 		_putchar(secondigit + '0');
 	}
@@ -33,6 +34,7 @@ void jack_bauer(void)
 	{
 		int firstdigit = k / 10;
 		int secondigit = k % 10;
+
 		_putchar(firstdigit + '0');
 		_putchar(secondigit + '0');
 	}
