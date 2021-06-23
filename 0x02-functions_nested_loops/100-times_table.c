@@ -7,6 +7,7 @@
 void print_times_table(int q)
 {
 	int i = 0, k = 0;
+	int first = 0, second = 0, third = 0;
     int m = q + 1;
 	for (i = 0; i < m; i++)
 	{
@@ -22,21 +23,16 @@ void print_times_table(int q)
 			}
 			if (n > 9)
 			{
-				int first = n / 10;
-				int second = n % 10;
                 if(n > 99)
                 {
-                    int first = n/100;
-					int tmpval = n - (first * 100);
-					second = tmpval/10;
-                    int third = tmpval % 10;
-                    _putchar(first + '0');
-                    _putchar(second + '0');
-                    _putchar(third + '0');
+					tmpval = n - ((n/100) * 100);
+                    _putchar(n/100 + '0');
+                    _putchar(tmpval/10 + '0');
+                    _putchar(tmpval % 10 + '0');
                 }else
 				{
-				_putchar(first + '0');
-				_putchar(second + '0');
+				_putchar((n / 10) + '0');
+				_putchar((n % 10) + '0');
 				}
 				if (k != q)
 				{
