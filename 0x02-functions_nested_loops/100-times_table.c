@@ -20,6 +20,7 @@ void print_times_table(int q)
 			if (k != 0)
 			{
 				_putchar(' ');
+				_putchar(' ');
 			}
 			if (n > 9)
 			{
