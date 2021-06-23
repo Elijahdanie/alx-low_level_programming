@@ -13,8 +13,8 @@ int main(void)
     {
         if(i != 1024)
         {
-            totalval += i % 3 == 0 ? 1 : 0;
-            totalval += i % 5 == 0 ? 1 : 0;
+            totalval += i % 3 == 0 ? i : 0;
+            totalval += i % 5 == 0 ? i : 0;
         }
     }
     printf("%d\n", totalval);
