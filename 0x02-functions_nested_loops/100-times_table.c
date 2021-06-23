@@ -7,7 +7,7 @@
 void print_times_table(int q)
 {
 	int i = 0, k = 0;
-	int first = 0, second = 0, third = 0;
+	int first = 0, second = 0, third = 0, tmpval = 0;
     int m = q + 1;
 	for (i = 0; i < m; i++)
 	{
