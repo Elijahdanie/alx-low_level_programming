@@ -20,16 +20,14 @@ void times_table(void)
 
 				_putchar(first + '0');
 				_putchar(second + '0');
+				_putchar(44);
+				_putchar(32);
 			}
 			else
 			{
 				_putchar(n + '0');
-				_putchar(' ');
-			}
-			if (n != 81)
-			{
 				_putchar(44);
-				_putchar(32);
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');
