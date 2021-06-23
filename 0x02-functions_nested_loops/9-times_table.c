@@ -23,7 +23,6 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar('0');
 				_putchar(n + '0');
 			}
 			if (n != 81)
