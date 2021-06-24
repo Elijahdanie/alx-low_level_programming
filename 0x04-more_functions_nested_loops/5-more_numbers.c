@@ -29,9 +29,5 @@ if  (i > 9)
 _putchar(s + '0');
 }
 }
-if (k != 9)
-{
-_putchar('\n');
-}
 }
 }
