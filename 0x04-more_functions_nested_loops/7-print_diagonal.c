@@ -17,10 +17,12 @@ for (i = 0; i < n; i++)
 {
 for (k = 1; k <= i; k++)
 {
+if(i != 0)
+{
 _putchar(' ');
 }
+}
 _putchar('\\');
-
 _putchar('\n');
 }
 }
