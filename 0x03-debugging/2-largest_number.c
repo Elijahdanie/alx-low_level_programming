@@ -26,7 +26,7 @@ largest = c;
 }
 else if (c == a)
 {
-largest = c > b ?c : b;
+largest = c > b ? c : b;
 }
 else if (c == b)
 {
@@ -34,7 +34,7 @@ largest = a > c ? a : c;
 }
 else if (a == b)
 {
-largest = c > a? c : a;
+largest = c > a ? c : a;
 }
 
 return (largest);
