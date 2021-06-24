@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_numbers - this prints numbers
+ * print_most_numbers - this prints numbers
  *
 */
 
