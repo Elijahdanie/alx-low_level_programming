@@ -29,5 +29,6 @@ if  (i > 9)
 _putchar(s + '0');
 }
 }
+_putchar('\n');
 }
 }
