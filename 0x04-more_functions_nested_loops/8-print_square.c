@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * print_square - this is prints a diagonal line on the terminal
+ * print_square - this prints a quare
  *
- * @n: this is the length of the diagonal
+ * @size: this is the size of the square
  *
  */
 
@@ -11,7 +11,7 @@ void print_square(int size)
 {
 int i, k = 0;
 
-if(size > 0)
+if (size > 0)
 {
 for (i = 0; i < size; i++)
 {
