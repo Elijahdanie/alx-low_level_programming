@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_numbers - this prints numbers
+ * more_numbers - this prints numbers
  *
  *
 */
@@ -10,7 +10,9 @@ void more_numbers(void)
 {
 int i, k = 0, f = 0, s = 0;
 
-for (i = 0; i < 14; i++)
+for (k = 0; k < 10; k++)
+{
+for (i = 0; i < 15; i++)
 {
 if  (i < 9)
 {
@@ -28,4 +30,5 @@ _putchar(s + '0');
 }
 }
 _putchar('\n');
+}
 }
