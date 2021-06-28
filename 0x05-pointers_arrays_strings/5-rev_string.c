@@ -15,7 +15,7 @@ while (s[length])
 length++;
 }
 
-for (length = length - 1; length > 0; length--)
+for (length = (length - 1); length > 0; length--)
 {
 temp = s[length];
 s[length] = s[k];

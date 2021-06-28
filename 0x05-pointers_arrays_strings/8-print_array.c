@@ -19,4 +19,5 @@ if (i != n)
 printf(", ");
 }
 }
+_putchar('\n');
 }
