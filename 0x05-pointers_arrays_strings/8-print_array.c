@@ -1,8 +1,9 @@
 #include "holberton.h"
 #include<stdio.h>
 /**
- * print_array - this sets the value of a pointer to
- * @n: this is the pointer passed into the function
+ * print_array - this prints the array of strings
+ * @n: this is the length of the array
+ * @a: this is the array pointer passed in
  */
 
 void print_array(int *a, int n)
@@ -13,7 +14,7 @@ while (i < n)
 {
 printf("%d", a[i]);
 i++;
-if(i != n)
+if (i != n)
 {
 printf(", ");
 }

@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * puts2 - this copies a string from src to destination
+ * _strcpy - this copies a string from src to destination
  * @src: this is the source string to be copied
  * @dest: this is where the string would be copied to
+ * Return: This returns the pointer to the destination
  */
 
 char *_strcpy(char *dest, char *src)
@@ -16,5 +17,5 @@ dest++;
 src++;
 }
 *dest = '\0';
-return ptr;
+return (ptr);
 }
