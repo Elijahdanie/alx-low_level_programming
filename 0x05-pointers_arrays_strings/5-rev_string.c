@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include<stdio.h>
 /**
- * print_rev - this prints string in reverse
+ * rev_string - this reverses the string passed in
  * @s: this is the pointer passed into the function
  */
 
