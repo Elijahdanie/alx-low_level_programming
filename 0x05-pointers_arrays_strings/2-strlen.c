@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strlen - this gives the length of a string
+ *_strlen- this gives the length of a string
  * @s: this is the pointer passed into the function
  */
 
@@ -12,5 +12,5 @@ while (*s++)
 {
 i++;
 }
-return i;
+return (i);
 }
