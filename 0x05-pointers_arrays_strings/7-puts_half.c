@@ -19,7 +19,7 @@ k = (length) / 2;
 }
 else
 {
-k = (length - 1) / 2;
+k = (length + 1) / 2;
 }
 
 for (i = k; i < length; i++)
