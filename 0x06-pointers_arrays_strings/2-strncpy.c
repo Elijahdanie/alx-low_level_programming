@@ -5,6 +5,7 @@
  *@dest: this is the pointer that gets copied to
  *@src: this is the string to be copied
  *@n: this is the measure to which it will copy
+  *Return: returns a pointer to the final value
  */
 
 char *_strncpy(char *dest, char *src, int n)

@@ -4,6 +4,7 @@
  *_strcat - This adds the content of source to destination
  *@dest: this is the string that gets added to
  *@src: this is the string to be added
+ *Return: returns a pointer to the final value
  */
 
 char *_strcat(char *dest, char *src)

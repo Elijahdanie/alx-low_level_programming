@@ -5,6 +5,7 @@
  *@dest: this is the string that gets added to
  *@src: this is the string to be added
  *@n: this is the measure to which it will concat
+  *Return: returns a pointer to the final value
  */
 
 char *_strncat(char *dest, char *src, int n)
