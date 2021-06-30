@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strcat -This adds the content of source to destination
- *@dest: this is the string that gets added to
- @src: this is the string to be added
- @n: this is the measure to which it will concat
+ *_strncpy -This copies the string from src to dest
+ *@dest: this is the pointer that gets copied to
+ *@src: this is the string to be copied
+ *@n: this is the measure to which it will copy
  */
 
 char *_strncpy(char *dest, char *src, int n)
