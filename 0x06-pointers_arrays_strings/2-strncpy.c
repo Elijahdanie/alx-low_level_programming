@@ -15,15 +15,15 @@ char *finalptr = dest;
 if (*dest == '\0')
 {
 finalptr = '\0';
-return finalptr;
+return  (finalptr);
 }
 
 while (*src && n)
 {
-    *dest++ = *src++;
-    n--;
+*dest++ = *src++;
+n--;
 }
 
 *dest = '\0';
-return finalptr;
+return (finalptr);
 }

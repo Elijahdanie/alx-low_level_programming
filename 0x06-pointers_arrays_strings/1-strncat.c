@@ -19,8 +19,7 @@ finalptr = '\0';
 return (finalptr);
 }
 
-for(length = 0; dest[length] != '\0'; length++);
-
+for (length = 0; dest[length] != '\0'; length++);
 for (srclength = 0; srclength < n; srclength++)
 {
 dest[length] = src[srclength];
