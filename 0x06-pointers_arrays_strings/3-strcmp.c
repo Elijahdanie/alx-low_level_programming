@@ -13,21 +13,21 @@ while (*s2)
 {
 if (*s1 > *s2)
 {
-return(15);
+return (15);
 }
-if(*s1 < *s2)
+if (*s1 < *s2)
 {
-return(-15);
+return (-15);
 }
 s1++;
 s2++;
 }
 if (*s1)
 {
-return(1);
+return (1);
 }
 else
 {
-return(0);
+return (0);
 }
 }

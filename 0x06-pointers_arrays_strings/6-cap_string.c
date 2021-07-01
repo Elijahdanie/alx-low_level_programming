@@ -3,18 +3,19 @@
 
 /**
  *cap_string - This capitalizes first letter of words in the string
- *@p: pointer 
+ *@p: pointer
  *Return: This returns the pointer to the string
  */
 
-char *cap_string(char *p){
+char *cap_string(char *p)
+{
 char *ptr = p;
 int seenFirstLetter = 0;
 char prev = *p;
 
-while(*p)
+while (*p)
 {
-if(*p > 'a' && *p < 'z')
+if (*p > 'a' && *p < 'z')
 {
 seenFirstLetter++;
 }
@@ -45,5 +46,5 @@ prev == '}'
 prev = *p;
 p++;
 }
-return ptr;
+return (ptr);
 }

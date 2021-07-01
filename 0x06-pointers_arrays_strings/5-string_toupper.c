@@ -12,7 +12,7 @@ int tmp = 0;
 char *ptr = p;
 char upper;
 
-for(; *p != '\0'; p++)
+for (; *p != '\0'; p++)
 {
 if (*p > 97 && *p < 122)
 {
@@ -21,5 +21,5 @@ upper = 65 + tmp;
 *p = upper;
 }
 }
-return ptr;
+return (ptr);
 }
