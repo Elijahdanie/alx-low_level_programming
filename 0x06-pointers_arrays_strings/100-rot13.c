@@ -1,6 +1,9 @@
 #include "holberton.h"
 
-
+/**
+ * rot13 - this encodes a string using rot13
+ * @ptr: pointer to the string processed
+*/
 
 char *rot13(char *ptr)
 {

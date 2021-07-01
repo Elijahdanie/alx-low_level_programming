@@ -1,4 +1,8 @@
 #include "holberton.h"
+/**
+ * print_number - Prints the integer passed in
+ * @n: integer passed in
+*/
 
 void print_number(int n)
 {
