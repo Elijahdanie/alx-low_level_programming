@@ -22,3 +22,4 @@ if ((*ptr >= 'n' && *ptr <= 'z')
 }
 return (finalptr);
 }
+
