@@ -13,20 +13,18 @@ char *_strncat(char *dest, char *src, int n)
 int length, srclength = 0;
 char *finalptr = dest;
 
-if (*dest == '\0' || *src == '\0')
+for (length = 0; dest[length] != '\0'; length++)
 {
-finalptr = '\0';
+}
+for (srclength = 0; srclength < n; srclength++)
+{
+dest[length] = src[srclength];
+if (src[srclength] == '\0')
+{
 return (finalptr);
 }
-while (*dest)
-{
-dest++;
+length++;
 }
-while (*src && n)
-{
-*dest++ = *src++;
-n--;
-}
-*dest = '\0';
+dest[length + 1] = '\0';
 return (finalptr);
 }
