@@ -1,10 +1,9 @@
 #include "holberton.h"
 
 /**
- *_strcat - This compares two char arrays
- *@s2: First String for comparision
- *@s1: Second String for comparison
- *Return: returns 1 if s1 greater than s2, -1 if otherwise ekse 0
+ *char *leet(char *); - This reverses am integer array
+ *@a: this is the pointer to the int array passed in
+ *@n: this is the size of the int array
  */
 
 void reverse_array(int *a, int n)

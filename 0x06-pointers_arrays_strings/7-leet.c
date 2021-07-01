@@ -1,10 +1,9 @@
 #include "holberton.h"
 
 /**
- *_strcat - This compares two char arrays
- *@s2: First String for comparision
- *@s1: Second String for comparison
- *Return: returns 1 if s1 greater than s2, -1 if otherwise ekse 0
+ *leet - This compares two char arrays
+ *@ptr: pointer to the char array to be encoded
+ *Return: returns a pointer to the char array encoded
  */
 
 char *leet(char *ptr)

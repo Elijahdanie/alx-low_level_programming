@@ -1,10 +1,9 @@
 #include "holberton.h"
 
 /**
- *_strcat - This compares two char arrays
- *@s2: First String for comparision
- *@s1: Second String for comparison
- *Return: returns 1 if s1 greater than s2, -1 if otherwise ekse 0
+ *string_toupper - This compares two char arrays
+ *@p: First String for comparision
+ *Return: returns the pointer to the char array
  */
 
 char *string_toupper(char *p)
