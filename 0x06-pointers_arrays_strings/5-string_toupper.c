@@ -8,18 +8,18 @@
 
 char *string_toupper(char *p)
 {
-int tmp = 0;
-char *ptr = p;
-char upper;
+	int tmp = 0;
+	char *ptr = p;
+	char upper;
 
-for (; *p != '\0'; p++)
-{
-if (*p >= 97 && *p <= 122)
-{
-tmp = *p - 97;
-upper = 65 + tmp;
-*p = upper;
-}
-}
-return (ptr);
+	for (; *p != '\0'; p++)
+	{
+		if (*p >= 97 && *p <= 122)
+		{
+			tmp = *p - 97;
+			upper = 65 + tmp;
+			*p = upper;
+		}
+	}
+	return (ptr);
 }
