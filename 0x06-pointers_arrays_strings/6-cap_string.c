@@ -15,7 +15,7 @@ char prev = *p;
 
 while (*p)
 {
-if (*p > 'a' && *p < 'z')
+if (*p >= 'a' && *p <= 'z')
 {
 seenFirstLetter++;
 }

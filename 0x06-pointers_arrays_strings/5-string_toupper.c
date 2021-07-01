@@ -14,7 +14,7 @@ char upper;
 
 for (; *p != '\0'; p++)
 {
-if (*p > 97 && *p < 122)
+if (*p >= 97 && *p <= 122)
 {
 tmp = *p - 97;
 upper = 65 + tmp;
