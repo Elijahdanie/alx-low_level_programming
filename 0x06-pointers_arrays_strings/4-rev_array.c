@@ -9,10 +9,10 @@
 void reverse_array(int *a, int n)
 {
 	int i = 0, tmp = 0, length = n - 1;
-	
+
 	while (i < length)
 	{
-		if(length == i || i > length)
+		if (length == i || i > length)
 		{
 			break;
 		}
