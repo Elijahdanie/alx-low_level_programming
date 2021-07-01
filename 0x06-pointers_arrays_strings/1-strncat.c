@@ -18,16 +18,15 @@ if (*dest == '\0' || *src == '\0')
 finalptr = '\0';
 return (finalptr);
 }
-while(*dest)
+while (*dest)
 {
-    dest++;
+dest++;
 }
 while (*src && n)
 {
-    *dest++ = *src++;
+*dest++ = *src++;
+n--;
 }
-
 *dest = '\0';
-
 return (finalptr);
 }
