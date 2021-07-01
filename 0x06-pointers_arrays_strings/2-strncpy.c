@@ -20,7 +20,9 @@ return  (finalptr);
 
 while (*src && n)
 {
-*dest++ = *src++;
+*dest = *src;
+dest++;
+src++;
 n--;
 }
 
