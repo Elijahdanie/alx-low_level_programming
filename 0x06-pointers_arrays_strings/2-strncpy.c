@@ -21,7 +21,7 @@ i++;
 while (i < n)
 {
 dest[i] = '\0';
- i++;
+i++;
 }
 return (finalptr);
 }
