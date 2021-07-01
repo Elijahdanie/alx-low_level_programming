@@ -18,18 +18,16 @@ if (*dest == '\0' || *src == '\0')
 finalptr = '\0';
 return (finalptr);
 }
-for (length = 0; dest[length] != '\0'; length++)
+while(*dest)
 {
+    dest++;
 }
-for (srclength = 0; srclength < n; srclength++)
+while (*src && n)
 {
-dest[length] = src[srclength];
-if (src[srclength] == '\0')
-{
-return (finalptr);
+    *dest++ = *src++;
 }
-length++;
-}
-dest[length] = '\0';
+
+*dest = '\0';
+
 return (finalptr);
 }
