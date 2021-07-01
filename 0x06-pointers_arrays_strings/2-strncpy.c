@@ -17,7 +17,6 @@ if (*dest == '\0')
 finalptr = '\0';
 return  (finalptr);
 }
-
 while (*src && n)
 {
 *dest = *src;
@@ -25,7 +24,6 @@ dest++;
 src++;
 n--;
 }
-
 *dest = '\0';
 return (finalptr);
 }
