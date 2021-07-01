@@ -13,21 +13,9 @@ char *ptr = p;
 int seenFirstLetter = 0;
 char prev = *p;
 
-if (prev >= 'a' && prev <= 'z')
-{
-    *p = (65 + (*p - 97));
-}
-
 while (*p)
 {
-if (*p >= 'a' && *p <= 'z')
-{
-seenFirstLetter++;
-}
-else
-{
-seenFirstLetter = 0;
-}
+seenFirstLetter = (*p >= 'a' && *p <= 'z') ? seenFirstLetter + 1 : 0;
 if (seenFirstLetter == 1)
 {
 if (prev == ' ' ||
@@ -42,7 +30,8 @@ prev == '"' ||
 prev == '(' ||
 prev == ')' ||
 prev == '{' ||
-prev == '}'
+prev == '}' ||
+p == ptr
 )
 {
 *p = (65 + (*p - 97));
