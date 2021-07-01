@@ -13,6 +13,11 @@ char *ptr = p;
 int seenFirstLetter = 0;
 char prev = *p;
 
+if (prev >= 'a' && prev <= 'z')
+{
+    *p = (65 + (*p - 97));
+}
+
 while (*p)
 {
 if (*p >= 'a' && *p <= 'z')
@@ -40,7 +45,7 @@ prev == '{' ||
 prev == '}'
 )
 {
-*p = 65 + (*p - 97);
+*p = (65 + (*p - 97));
 }
 }
 prev = *p;
