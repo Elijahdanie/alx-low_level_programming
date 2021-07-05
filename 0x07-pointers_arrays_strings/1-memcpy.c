@@ -18,6 +18,7 @@ while (n > 0 && *src)
 *dest = *src;
 src++;
 dest++;
+n--;
 }
 return (ptr);
 }
