@@ -45,5 +45,5 @@ finalptr = haystack;
 break;
 }
 }
-return finalptr;
+return (finalptr);
 }
