@@ -11,19 +11,19 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-char *ptr = dest;
+	char *ptr = dest;
 
-while (*src)
-{
-    if(n > 0)
-    {
-        *dest++ = *src++;
-    }
-    else
-    {
-        break;
-    }
-n--;
-}
-return (ptr);
+	while (*src)
+	{
+		if (n > 0)
+		{
+			*dest++ = *src++;
+		}
+		else
+		{
+			break;
+		}
+		n--;
+	}
+	return (ptr);
 }
