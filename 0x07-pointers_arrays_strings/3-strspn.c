@@ -23,7 +23,7 @@ seen = 1;
 }
 accept++;
 }
-if(check != 0)
+if (check != 0)
 {
 val += check;
 }
@@ -35,5 +35,5 @@ accept = ptrcache;
 s++;
 check = 0;
 }
-return val;
+return (val);
 }

@@ -16,20 +16,20 @@ while (*s)
 {
 while (*accept)
 {
-if(*accept == *s)
+if (*accept == *s)
 {
 seen = 1;
 break;
 }
 accept++;
 }
-if(seen == 1)
-   {
-       finalptr = s;
-       break;
-   }
+if (seen == 1)
+{
+finalptr = s;
+break;
+}
 s++;
 accept = ptrcache;
 }
-return finalptr;
+return (finalptr);
 }

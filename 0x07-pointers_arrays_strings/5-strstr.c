@@ -23,18 +23,18 @@ while (*haystack)
 {
 checker = haystack;
 while (*needle)
-    {
-        if (*checker++ == *needle++)
-        {
-            check++;
-        }
-        else
-        {
-            check = 0;
-            break;
-        }
-    }
-if(check != len)
+{
+if (*checker++ == *needle++)
+{
+check++;
+}
+else
+{
+check = 0;
+break;
+}
+}
+if (check != len)
 {
 needle = ptrcache;
 haystack++;

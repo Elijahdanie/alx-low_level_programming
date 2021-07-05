@@ -13,12 +13,12 @@ char *_strchr(char *s, char c)
 char *finalptr = '\0';
 while (*s)
 {
-if(*s == c)
+if (*s == c)
 {
 finalptr = s;
 break;
 }
 s++;
 }
-return finalptr;
+return (finalptr);
 }
