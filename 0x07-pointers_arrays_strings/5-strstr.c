@@ -9,5 +9,41 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-
+char *finalptr = '\0';
+char *ptrcache = needle;
+char *checker = haystack;
+int check = 0, len = 0;
+while (*needle)
+{
+len++;
+needle++;
+}
+needle = ptrcache;
+while (*haystack)
+{
+checker = haystack;
+while (*needle)
+    {
+        if (*checker++ == *needle++)
+        {
+            check++;
+        }
+        else
+        {
+            check = 0;
+            break;
+        }
+    }
+if(check != len)
+{
+needle = ptrcache;
+haystack++;
+}
+else
+{
+finalptr = haystack;
+break;
+}
+}
+return finalptr;
 }
