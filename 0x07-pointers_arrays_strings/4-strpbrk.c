@@ -9,7 +9,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-char *finalptr;
+char *finalptr = '\0';
 char *ptrcache = accept;
 int seen = 0;
 while (*s)

@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 {
 char *finalptr;
 int seen = 0;
-while (*s)
+while (*s >= '\0')
 {
 if (*s == c)
 {
