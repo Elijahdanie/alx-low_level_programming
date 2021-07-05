@@ -22,9 +22,9 @@ break;
 }
 s++;
 }
-if(seen == 0)
+if (seen == 0)
 {
-    *finalptr = '\0';
+	*finalptr = '\0';
 }
 return (finalptr);
 }

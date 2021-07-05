@@ -14,16 +14,16 @@ char *_memset(char *s, char b, unsigned int n)
 
 	while (*s)
 	{
-        if (n > 0)
-        {
-		    *s++ = b;
-	    }
-        else
-        {
-            break;
-        }
-        n--;
-    }
+		if (n > 0)
+	{
+		*s++ = b;
+	}
+	else
+	{
+		break;
+	}
+	n--;
+	}
 	return (ptr);
 }
 
