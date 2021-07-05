@@ -13,11 +13,16 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 char *ptr = dest;
 
-while (n > 0 && *src)
+while (*src)
 {
-*dest = *src;
-src++;
-dest++;
+    if(n > 0)
+    {
+        *dest++ = *src++;
+    }
+    else
+    {
+        break;
+    }
 n--;
 }
 return (ptr);

@@ -10,21 +10,16 @@
 
 char *_strchr(char *s, char c)
 {
-char *finalptr;
-int seen = 0;
+char *finalptr = '\0';
+
 while (*s >= '\0')
 {
 if (*s == c)
 {
 finalptr = s;
-seen = 1;
 break;
 }
 s++;
-}
-if (seen == 0)
-{
-	*finalptr = '\0';
 }
 return (finalptr);
 }
