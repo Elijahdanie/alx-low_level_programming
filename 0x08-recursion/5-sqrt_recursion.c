@@ -8,9 +8,9 @@
 
 int _sqrt_recursion(int n)
 {
-    int checker = 0;
+int checker = 0;
 
-   return (findSqrt(checker, n));
+return (findSqrt(checker, n));
 }
 
 /**
@@ -22,17 +22,15 @@ int _sqrt_recursion(int n)
 
 int findSqrt(int checker, int targetNum)
 {
-    int testValue = checker * checker;
+int testValue = checker * checker;
 
-    if (testValue > targetNum)
-    {
-        return (-1);
-    }
-
-    if (testValue == targetNum)
-    {
-        return (checker);
-    }
-
-    return (findSqrt(checker + 1, targetNum));
+if (testValue > targetNum)
+{
+return (-1);
+}
+if (testValue == targetNum)
+{
+return (checker);
+}
+return (findSqrt(checker + 1, targetNum));
 }

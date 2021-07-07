@@ -7,14 +7,13 @@
   */
 int is_prime_number(int n)
 {
-    int checker = 2;
+int checker = 2;
 
-    if(n <= 2)
-    {
-        return(0);
-    }
-
-    return (checkEquality(checker, n));
+if (n <= 2)
+{
+return(0);
+}
+return (checkEquality(checker, n));
 }
 
 /**
@@ -25,14 +24,14 @@ int is_prime_number(int n)
   */
 int checkEquality(int checker, int targetNum)
 {
-    if (targetNum % checker == 0)
-    {
-        return (0);
-    }
-    else if (targetNum / checker == 1)
-    {
-        return (1);
-    }
-    else
-        return (checkEquality(checker + 1, targetNum));
+if (targetNum % checker == 0)
+{
+return (0);
+}
+else if (targetNum / checker == 1)
+{
+return (1);
+}
+else
+return (checkEquality(checker + 1, targetNum));
 }
