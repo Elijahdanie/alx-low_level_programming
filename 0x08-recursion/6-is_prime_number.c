@@ -11,13 +11,13 @@ int checker = 2;
 
 if (n <= 2)
 {
-return(0);
+return (0);
 }
 return (checkEquality(checker, n));
 }
 
 /**
-  * check_prime - this recursively checks for the prime
+  * checkEquality - this recursively checks for the prime
   * @targetNum: the number to be checked
   * @checker: the iteration times
   * Return: 1 for prime or 0 composite
