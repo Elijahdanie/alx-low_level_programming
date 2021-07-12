@@ -1,34 +1,23 @@
 #include "holberton.h"
 #include <stdio.h>
 #include<string.h>
+#include <stdlib.h>
 
-int isNumber(char s[]);
-int _isdigit(int);
 
-int main(__attribute__((unused)) int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-    if (isNumber(argv[1]) && isNumber(argv[1]))
+    int fnum, snum = 0, result = 0;
+    if(argc == 3)
     {
-        
+        fnum = atoi(argv[1]);
+        snum = atoi(argv[2]);
+        result = fnum * snum;
+        printf("%d\n", result);
+        return 0;
     }
     else
     {
         printf("Error\n");
+        return 1;
     }
-    
-}
-
-int isNumber(char s[])
-{
-    for (int i = 0; s[i]!= '\0'; i++)
-    {
-        if (_isdigit(s[i]) == 0)
-              return 0;
-    }
-    return 1;
-}
-
-int _isdigit(int c)
-{
-return (c >= 48 && c <= 57 ? 1 : 0);
 }
