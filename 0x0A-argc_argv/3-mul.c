@@ -16,10 +16,10 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		fnum = atoi (argv[1]);
-		snum = atoi (argv[2]);
+		fnum = atoi(argv[1]);
+		snum = atoi(argv[2]);
 		result = fnum * snum;
-		printf ("%d\n", result);
+		printf("%d\n", result);
 		return (0);
 	}
 	else
