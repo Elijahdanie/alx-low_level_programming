@@ -1,30 +1,36 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "holberton.h"
+#include "stdlib.h"
+
 /**
  * _strdup - duplicate to new memory space location
  * @str: char
  * Return: 0
  */
+
 char *_strdup(char *str)
 {
-	int i, end;
-	char *array;
+char *finalptr;
+unsigned int sizeofOriginal = 0, j = 0;
 
-	if (str == NULL)
-		return (NULL);
+if(*str == '\0')
+{
+    return ('\0');
+}
+if(*str == "")
+{
+    return ("");
+}
 
-	for (end = 0; end <= *str; end++)
-	{
-	}
-
-	end += 1;
-	array = malloc(sizeof(char) * end);
-
-	for (i = 0; i < end; i++)
-		array[i] = str[i];
-
-	if (array == NULL)
-		return (NULL);
-	return (array);
+while (str[sizeofOriginal])
+{
+sizeofOriginal++;
+}
+finalptr = malloc(sizeof(char) * (sizeofOriginal + 1));
+while (str[j])
+{
+finalptr[j] = str[j];
+j++;
+}
+finalptr[j] = '\0';
+return (finalptr);
 }
