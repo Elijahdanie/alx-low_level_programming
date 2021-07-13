@@ -12,13 +12,9 @@ char *_strdup(char *str)
 char *finalptr;
 unsigned int sizeofOriginal = 0, j = 0;
 
-if(*str == '\0')
+if (*str == '\0')
 {
     return ('\0');
-}
-if(*str == "")
-{
-    return ("");
 }
 
 while (str[sizeofOriginal])
@@ -26,6 +22,12 @@ while (str[sizeofOriginal])
 sizeofOriginal++;
 }
 finalptr = malloc(sizeof(char) * (sizeofOriginal + 1));
+
+if (finalptr == NULL)
+{
+return NULL;
+}
+
 while (str[j])
 {
 finalptr[j] = str[j];
