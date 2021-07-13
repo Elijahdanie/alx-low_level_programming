@@ -9,30 +9,28 @@
 
 char *_strdup(char *str)
 {
-char *finalptr;
-unsigned int sizeofOriginal = 0, j = 0;
+	int a = 0, i = 1;
+	char *s;
 
-if (*str == NULL)
-{
-return (NULL);
-}
+	if (str == NULL)
+		return (NULL);
 
-while (str[sizeofOriginal])
-{
-sizeofOriginal++;
-}
-finalptr = malloc(sizeof(char) * (sizeofOriginal + 1));
+	while (str[i])
+	{
+		i++;
+	}
 
-if (finalptr == NULL)
-{
-return (NULL);
-}
+	s = malloc((sizeof(char) * i) + 1);
 
-while (str[j])
-{
-finalptr[j] = str[j];
-j++;
-}
-finalptr[j] = '\0';
-return (finalptr);
+	if (s == NULL)
+		return (NULL);
+
+	while (a < i)
+	{
+		s[a] = str[a];
+		a++;
+	}
+
+	s[a] = '\0';
+	return (s);
 }
