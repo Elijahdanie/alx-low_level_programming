@@ -12,9 +12,9 @@ char *_strdup(char *str)
 char *finalptr;
 unsigned int sizeofOriginal = 0, j = 0;
 
-if (*str == '\0')
+if (*str == NULL)
 {
-    return ('\0');
+return (NULL);
 }
 
 while (str[sizeofOriginal])
@@ -25,7 +25,7 @@ finalptr = malloc(sizeof(char) * (sizeofOriginal + 1));
 
 if (finalptr == NULL)
 {
-return NULL;
+return (NULL);
 }
 
 while (str[j])
