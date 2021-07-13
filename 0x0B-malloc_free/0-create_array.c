@@ -15,7 +15,7 @@ size_t i = 0;
 
 if (ptr == '\0' || size == 0)
 {
-return '\0';
+return ('\0');
 }
 while (i < size)
 {
