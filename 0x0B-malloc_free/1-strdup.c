@@ -16,7 +16,7 @@ while (str[sizeofOriginal])
 {
 sizeofOriginal++;
 }
-finalptr = malloc((sizeofOriginal * sizeof(char)) + 1);
+finalptr = malloc(sizeofOriginal * sizeof(char));
 while (str[j])
 {
 finalptr[j] = str[j];

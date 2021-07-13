@@ -14,11 +14,11 @@ char *finalptr;
 char *ptrcache;
 unsigned int i = 0;
 
-if (*s1 == '\0' )
+if (*s1 == '\0')
 {
 *s1 = '\0';
 }
-if (*s2 == '\0' )
+if (*s2 == '\0')
 {
 *s2 = '\0';
 }
@@ -26,7 +26,7 @@ while (s1[i] || s2[i])
 {
 i++;
 }
-finalptr = malloc(i * sizeof(char) + 1);
+finalptr = malloc((i++) * sizeof(char));
 ptrcache = finalptr;
 while (*s1)
 {
