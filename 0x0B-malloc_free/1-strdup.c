@@ -12,11 +12,16 @@ char *_strdup(char *str)
 char *finalptr;
 unsigned int sizeofOriginal = 0, j = 0;
 
+if(*str == '\0')
+{
+    return ('\0');
+}
+
 while (str[sizeofOriginal])
 {
 sizeofOriginal++;
 }
-finalptr = malloc(sizeof(char) * sizeofOriginal);
+finalptr = malloc(sizeof(char) * (sizeofOriginal + 1));
 while (str[j])
 {
 finalptr[j] = str[j];
