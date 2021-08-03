@@ -14,7 +14,7 @@ unsigned int iterator = 0;
 listint_t *newnode;
 listint_t *tmpHead;
 
-if(head == NULL)
+if (head == NULL)
 {
 return (NULL);
 }

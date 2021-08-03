@@ -21,5 +21,5 @@ while (tmp)
 numitems++;
 tmp = tmp->next;
 }
-return numitems;
+return (numitems);
 }

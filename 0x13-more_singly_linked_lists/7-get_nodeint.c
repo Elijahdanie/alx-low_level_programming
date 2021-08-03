@@ -13,17 +13,17 @@ unsigned int indexatnode = 0;
 
 if (head == NULL)
 {
-     return (NULL);
+return (NULL);
 }
-while(head)
+while (head)
 {
 if (indexatnode == index)
 {
-return head;
+return (head);
 break;
 }
 head = head->next;
 indexatnode++;
 }
- return (NULL);
+return (NULL);
 }

@@ -19,5 +19,6 @@ while (head)
 sumvalue += head->n;
 head = head->next;
 }
-return (sumvalue);   
+return (sumvalue);
 }
+

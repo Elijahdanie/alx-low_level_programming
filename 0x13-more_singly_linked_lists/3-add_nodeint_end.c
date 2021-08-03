@@ -14,27 +14,27 @@ listint_t *tmp;
 
 if (head == NULL)
 {
-    return (NULL);
+return (NULL);
 }
 
 newnode = malloc(sizeof(listint_t));
 
-if(newnode == NULL)
+if (newnode == NULL)
 {
-    return (NULL);
+return (NULL);
 }
 
 newnode->n = n;
 newnode->next = NULL;
 
-if(*head == NULL)
+if (*head == NULL)
 {
-    *head = newnode;
-    return (*head);
+*head = newnode;
+return (*head);
 }
 tmp = *head;
 while (tmp->next)
-    tmp = tmp->next;
+tmp = tmp->next;
 tmp->next = newnode;
 
 return (newnode);

@@ -14,7 +14,7 @@ const listint_t *tmp;
 
 if (h == NULL)
 {
-return nodes;
+return (nodes);
 }
 tmp = h;
 while (tmp)
@@ -23,5 +23,5 @@ nodes++;
 printf("%d\n", tmp->n);
 tmp = tmp->next;
 }
-return nodes;
+return (nodes);
 }

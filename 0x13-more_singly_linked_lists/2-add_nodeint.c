@@ -19,5 +19,5 @@ return (NULL);
 newnode->n = n;
 newnode->next = *head;
 *head = newnode;
-return *head;
+return (*head);
 }
