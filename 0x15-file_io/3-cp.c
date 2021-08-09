@@ -4,6 +4,7 @@
   * main - Entry point
   * @argc: The argument count
   * @argv: The argument vector
+  * Return : returns 0 success
   */
 int main(int argc, char **argv)
 {

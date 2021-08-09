@@ -4,10 +4,11 @@
  * read_textfile - this reads a text file
  * @filename: name of file to read
  * @letters: the length of letters to read
- * 
+ *
  * Return:returns the number of letters read or 0 on error
  */
-ssize_t read_textfile(const char *filename, size_t letters){
+ssize_t read_textfile(const char *filename, size_t letters)
+{
 ssize_t textread;
 size_t fd;
 
