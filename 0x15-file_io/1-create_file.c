@@ -9,7 +9,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-size_t fd;
+int fd;
 int charLength = 0;
 
 if (text_content == NULL)
@@ -25,7 +25,8 @@ while (text_content[charLength])
 {
 charLength++;
 }
-close(fd);
+
 write(fd, text_content, charLength);
+close(fd);
 return (1);
 }
