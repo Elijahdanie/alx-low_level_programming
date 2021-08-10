@@ -13,7 +13,7 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-size_t fd;
+int fd;
 int charlength = 0;
 int writeResult = 0;
 
