@@ -10,6 +10,7 @@
 int create_file(const char *filename, char *text_content)
 {
 int fd;
+int charlength = 0;
 
 	if (!filename)
 		return (-1);
@@ -18,8 +19,13 @@ int fd;
 	if (fd == -1)
 		return (-1);
 
+	while (text_content[charlength])
+	{
+		charlength++;
+	}
+
 	if (text_content)
-		write(fd, text_content, _strlen(text_content));
+		write(fd, text_content, charlength);
 
 	close(fd);
 	return (1);
