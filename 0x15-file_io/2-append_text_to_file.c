@@ -17,6 +17,11 @@ int fd;
 int charlength = 0;
 int writeResult = 0;
 
+if (text_content == NULL)
+{
+    return (0);
+}
+
 if (filename == NULL)
 {
 return (0);
