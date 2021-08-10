@@ -17,11 +17,6 @@ int fd;
 int charlength = 0;
 int writeResult = 0;
 
-if (text_content == NULL)
-{
-    return (0);
-}
-
 if (filename == NULL)
 {
 return (0);
@@ -36,8 +31,10 @@ while (text_content[charlength])
 charlength++;
 }
 
+if (text_content)
+{
 writeResult = write(fd, text_content, charlength);
-
+}
 if (writeResult == -1)
 {
 return (0);
