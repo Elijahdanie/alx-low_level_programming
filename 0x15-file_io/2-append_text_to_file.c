@@ -1,4 +1,9 @@
 #include "main.h"
+#include<fcntl.h>
+#include<unistd.h>
+#include<sys/types.h>
+#include<stdio.h>
+#include<sys/stat.h>
 
 /**
  * append_text_to_file - This appends a text to a file

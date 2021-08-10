@@ -1,4 +1,9 @@
 #include "main.h";
+#include<fcntl.h>
+#include<unistd.h>
+#include<sys/types.h>
+#include<stdio.h>
+#include<sys/stat.h>
 
 /**
  * read_textfile - this reads a text file
