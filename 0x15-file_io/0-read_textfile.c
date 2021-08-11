@@ -1,20 +1,15 @@
-#include "main.h";
-#include<fcntl.h>
-#include<unistd.h>
-#include<sys/types.h>
-#include<stdio.h>
-#include<sys/stat.h>
+#include "holberton.h"
 
 /**
- * read_textfile - this reads a text file
- * @filename: name of file to read
- * @letters: the length of letters to read
- *
- * Return:returns the number of letters read or 0 on error
- */
+  * read_textfile - ...
+  * @filename: The source file
+  * @letters: Number of letters to reads and prints
+  *
+  * Return: ...
+  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int fd, readed;
+	int fd, readed;
 	char *buff = malloc(sizeof(char *) * letters);
 
 	if (!buff)

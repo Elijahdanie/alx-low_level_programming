@@ -1,21 +1,15 @@
-#include "main.h"
-#include<fcntl.h>
-#include<unistd.h>
-#include<sys/types.h>
-#include<stdio.h>
-#include<sys/stat.h>
+#include "holberton.h"
 
 /**
- * create_file - this creates a file with contents
- * @filename: name of the file
- * @text_content: the contents of the file
- *
- * Return: returns 0 on error or 1 on success
- */
+  * create_file - ...
+  * @filename: ...
+  * @text_content: ...
+  *
+  * Return: ...
+  */
 int create_file(const char *filename, char *text_content)
 {
-int fd;
-int charlength = 0;
+	int fd;
 
 	if (!filename)
 		return (-1);
@@ -24,14 +18,25 @@ int charlength = 0;
 	if (fd == -1)
 		return (-1);
 
-	while (text_content[charlength])
-	{
-		charlength++;
-	}
-
 	if (text_content)
-		write(fd, text_content, charlength);
+		write(fd, text_content, _strlen(text_content));
 
 	close(fd);
 	return (1);
+}
+
+/**
+  * _strlen - Returns the length of a string
+  * @s: String to count
+  *
+  * Return: String length
+  */
+int _strlen(char *s)
+{
+	int c = 0;
+
+	while (s[c])
+		c++;
+
+	return (c);
 }
