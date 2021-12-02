@@ -2,17 +2,15 @@
 
 CC=gcc
 SRC=main.c school.c
-OBJ=main.o school.o
+OBJ=$(SRC:%.c=%.o)
 NAME=school
 RM=rm
 
-all: $(NAME)
+all:$(OBJ)
+	$(CC) $(OBJ) $< -o $(NAME)
 
 %.o: %.c %.h
-	$(CC) -c $^
-
-$(NAME): $(OBJ)
-	$(CC) $^ -o $@
+	$(CC) -c $<
 
 clean:
 	$(RM) -f *~ $(NAME)
