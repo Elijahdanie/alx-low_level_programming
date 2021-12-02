@@ -1,8 +1,8 @@
 
 CC=gcc
-SRC=main.c holberton.c
-OBJ=main.o holberton.o
-NAME=holberton
+SRC=main.c school.c
+OBJ=%.o
+NAME=school
 
 all: $(NAME)
 
