@@ -2,7 +2,7 @@
 
 /**
  * linear_search -This looks for the index of
- * value indicated
+ * 					value indicated
  * @array: This is the array to seach in
  * @size: this is the size of the array
  * @value: this is the value to search for

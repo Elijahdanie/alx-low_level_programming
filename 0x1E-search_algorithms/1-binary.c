@@ -39,6 +39,7 @@ void print(int *array, int left, int right)
 int binary_search(int *array, size_t size, int value)
 {
 	int left = 0, right = 0, mid = 0;
+
 	right = size - 1;
 	while(left < right)
 	{
