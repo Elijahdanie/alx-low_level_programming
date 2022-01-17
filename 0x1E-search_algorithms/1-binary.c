@@ -9,8 +9,7 @@
  */
 void print(int *array, int left, int right)
 {
-       	int len = 0, size =0;
-	size = right - left;
+    int len = 0;
 	len = left;
 	printf("Searching in array: ");
 	while(len <= right)
@@ -39,7 +38,7 @@ void print(int *array, int left, int right)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int left = 0, right = 0, mid = 0, len = 0;
+	int left = 0, right = 0, mid = 0;
 	right = size - 1;
 	while(left < right)
 	{
