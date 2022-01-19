@@ -1,5 +1,4 @@
 #include "search_algos.h"
-#include <string.h>
 
 /**
  * print - This prints message on screen
@@ -42,7 +41,6 @@ int binary_search(int *array, size_t size, int value)
 {
 	int left = 0, right = 0, mid = 0;
 
-	size = strlen(array);
 	right = size - 1;
 
 	if (!array || right <= 0)
@@ -53,6 +51,10 @@ int binary_search(int *array, size_t size, int value)
 	{
 		print(array, left, right);
 		mid = (right - left) / 2;
+		if (mid <= 0)
+		{
+			return (-1);
+		}
 		if (array[mid] == value)
 		{
 			return (mid);
