@@ -43,11 +43,11 @@ int binary_search(int *array, size_t size, int value)
 
 	right = size - 1;
 
-	if (!array)
+	if (!array || right <= 0)
 	{
 		return (-1);
 	}
-
+	printf("%d %d\n", right, left);
 	while (left < right)
 	{
 		print(array, left, right);
