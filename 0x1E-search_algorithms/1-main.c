@@ -8,7 +8,7 @@
 int main(void)
 {
     int array[] = {
-        0, 0
+        2,2,2,2,2,2,2,2
     };
     size_t size = sizeof(array) / sizeof(array[0]);
 
