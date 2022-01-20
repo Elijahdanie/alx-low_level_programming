@@ -12,20 +12,23 @@ void print(int *array, int left, int right)
 	int len = 0;
 
 	len = left;
-	printf("Searching in array: ");
-	while (len <= right)
+	if (len <= right)
 	{
-		if (len != right)
+		printf("Searching in array: ");
+		while (len <= right)
 		{
-			printf("%d, ", array[len]);
+			if (len != right)
+			{
+				printf("%d, ", array[len]);
+			}
+			else
+			{
+				printf("%d", array[len]);
+			}
+			len++;
 		}
-		else
-		{
-			printf("%d", array[len]);
-		}
-		len++;
+		printf("\n");
 	}
-	printf("\n");
 }
 
 
