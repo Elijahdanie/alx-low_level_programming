@@ -50,20 +50,24 @@ int binary_search(int *array, size_t size, int value)
 	while (left < right)
 	{
 		print(array, left, right);
-		mid = (right - left) / 2;
-		if (mid <= 0)
+		mid = ((right - left) / 2) + left;
+		if (array[right] == value)
 		{
-			return (-1);
+			return (right);
 		}
-		if (array[mid] == value)
+		else if (array[left] == value)
+		{
+			return (left);
+		}
+		else if (array[mid] == value)
 		{
 			return (mid);
 		}
-		else if (array[mid] > value)
+		else if (value > array[mid])
 		{
 			left = mid + 1;
 		}
-		else if (array[mid] < value)
+		else if (value < array[mid])
 		{
 			right = mid - 1;
 		}
